@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#myVideo {
+  position: fixed;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  #myVideo {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.container .header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.container .header .flexheader {
+  width: 90%;
+  height: 60px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header .flexheader p {
+  color: #f1f1f1;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  cursor: default;
+}
+
+.container .header .flexheader button {
+  background-color: #ffbd69;
+  color: #4F4F4F;
+  font-weight: bold;
+  font-size: 16px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.container .main {
+  color: #f1f1f1;
+  width: 75%;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.container .main h1 {
+  font-size: 52px;
+  padding: 20px 0px;
+  cursor: default;
+  text-shadow: 2px 2px 4px black;
+}
+
+.container .main h2 {
+  font-size: 36px;
+  padding: 20px 0px;
+  cursor: default;
+  text-shadow: 2px 2px 3px black;
+}
+
+.container .main button {
+  background-color: #ffbd69;
+  color: #4F4F4F;
+  font-weight: bold;
+  font-size: 18px;
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 20px 0px;
+}
+
+.container .main p {
+  font-size: 14px;
+  padding: 20px 0px;
+}
+
+.container .footer {
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 14px;
+  bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .container .main {
+    width: 90%;
+  }
+  .container .main h1 {
+    font-size: 36px;
+  }
+  .container .main h2 {
+    font-size: 23px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

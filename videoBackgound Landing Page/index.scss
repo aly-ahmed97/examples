@@ -1,0 +1,146 @@
+$font_L : 52px;
+$font_M : 36px;
+$font_S : 18px;
+$font_XS : 14px;
+$lightGrey : #d3d3d3;
+$darkGrey: #4F4F4F;
+$fontColor :#f1f1f1;
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+#myVideo
+{
+  position: fixed;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #myVideo { 
+        width:auto;
+        height: 100%;
+    }
+}
+.container
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    .header
+    {
+        width: 100%;
+        height: 60px;
+        background-color: rgba($color: #000000, $alpha: 0.35);
+        .flexheader{
+            width: 90%;
+            height: 60px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p
+            {
+                color: $fontColor;
+                font-size: $font_S;
+                padding: 10px;
+                border: 1px solid $lightGrey;
+                cursor: default;
+            }
+            button
+            {
+                background-color: #ffbd69;
+                color: $darkGrey;
+                font-weight: bold;
+                font-size: $font_S - 2;
+                width: 120px;
+                height: 40px;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+    .main
+    {
+        color: $fontColor;
+        width: 75%;
+        margin: 100px auto;
+        padding: 20px;
+        h1
+        {
+            font-size: $font_L;
+            padding: 20px 0px;
+            cursor: default;
+            text-shadow: 2px 2px 4px black;
+        }
+        h2
+        {
+            font-size: $font_M;
+            padding: 20px 0px;
+            cursor: default;
+            text-shadow: 2px 2px 3px black;
+        }
+        button
+        {
+            background-color: #ffbd69;
+            color: $darkGrey;
+            font-weight: bold;
+            font-size: $font_S;
+            width: 200px;
+            height: 60px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 20px 0px;
+        }
+        p
+        {
+            font-size: $font_XS;
+            padding: 20px 0px;
+        }
+    }
+    .footer
+    {
+        text-align: center;
+        color: $fontColor;
+        font-size: $font_XS;
+        bottom: 0;
+    }
+}
+@media (max-width: 1199.98px)
+{
+}
+@media (max-width: 991.98px)
+{
+    .container
+    {
+        .main
+        {
+            width: 90%;
+            h1
+            {
+                font-size: $font_M;
+            }
+            h2
+            {
+                font-size: $font_S + 5;
+            }
+        }
+    }
+}
+@media (max-width: 767.98px)
+{
+
+}
+@media (max-width: 575.98px)
+{
+
+}
